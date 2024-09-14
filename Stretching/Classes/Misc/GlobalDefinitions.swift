@@ -6,23 +6,21 @@
 //
 
 final class GlobalDefinitions {
-    static let domain = "https://pilates.cocorporateapps.com"
-    static let apiKey = "7gOuz7NvJpQYVVCUkF69"
+    static let domain = "https://stretching.cocorporateapps.com"
+    static let apiKey = "DzoCXXf4JZaUr4CmTkWU"
     
     static let otterScaleHost = "https://api.korrekted.com"
-    static let otterScaleApiKey = "idgToDZRMPFhKSm3"
+    static let otterScaleApiKey = "irbX8JIk0B4NFpDv"
     
-    static let appleAppID = "6479897865"
-    
-    static let applicationTag = "WALL_PILATES"
-    static let amplitudeApiKey = "d4ad5c33d23d7a891e9c68de9471f36b"
+    static let applicationTag = "STRETCHING"
+    static let amplitudeApiKey = "d433d2c66723aeefd10c5b65f91c1fa3"
     
     static let termsOfServiceUrl = "https://cocorporateapps.com/terms-of-use.html"
     static let privacyPolicyUrl = "https://cocorporateapps.com/privacy-policy.html"
     static let contactUsUrl = "https://cocorporateapps.com/contacts.html"
     
     enum Paygate {
-        static let defaultLifetime = "train.pilates.endless"
-        static let defaultMonthly = "train.pilates.monthly"
+        static let defaultLifetime = "train.stretching.lifetime"
+        static let defaultMonthly = "train.stretching.monthly"
     }
 }

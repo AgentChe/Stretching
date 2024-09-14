@@ -2,12 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>stretching</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb8607880142565033</string>
+			</array>
+		</dict>
+	</array>
 	<key>FacebookAppID</key>
-	<string></string>
+	<string>8607880142565033</string>
 	<key>FacebookClientToken</key>
-	<string></string>
+	<string>7679b27be729a501c1cfd6b752fb8064</string>
 	<key>FacebookDisplayName</key>
-	<string></string>
+	<string>Stretching</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -44,6 +63,6 @@
 		</dict>
 	</dict>
 	<key>branch_key</key>
-	<string></string>
+	<string>key_live_hEdGYII5PUzx4uyOZ1KTphfcrzpvT6hc</string>
 </dict>
 </plist>
