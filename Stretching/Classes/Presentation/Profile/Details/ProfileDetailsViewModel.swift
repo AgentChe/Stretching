@@ -15,7 +15,7 @@ final class ProfileDetailsViewModel {
         case trainingDays(WeekSchedule?)
         case focusZone([FocusZone], Gender?)
         case goals([DrillCategory])
-        case open(url: String)
+        case open(url: URL)
     }
     
     lazy var selectedCellModel = PublishRelay<ProfileDetailsTableElement>()

@@ -24,8 +24,6 @@ final class PaygateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Paygate Screen", parameters: [:])
         FirebaseManager.shared
             .logEvent(name: "client_paygate_screen")
         
@@ -41,12 +39,8 @@ final class PaygateViewController: UIViewController {
                 mainView.termsOfServiceButton.rx.tap.map { GlobalDefinitions.termsOfServiceUrl },
                 mainView.privacyPolicyButton.rx.tap.map { GlobalDefinitions.privacyPolicyUrl }
             )
-            .subscribe(onNext: { path in
-                guard let url = URL(string: path) else {
-                    return
-                }
-                
-                UIApplication.shared.open(url, options: [:])
+            .subscribe(onNext: { url in
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
             })
             .disposed(by: disposeBag)
         
